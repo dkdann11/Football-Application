@@ -1,0 +1,44 @@
+<div class="container">
+	<div class="top_content">
+		<div class="menu_header">
+			<div class="header_name">Real Madrid FC</div>
+			<div class="header_content">Player&nbsp;Data</div>
+		</div>
+		<div class="filter_panel box">
+			<div class="filter_column country_container">
+				<div class="country_text">Country</div>
+				<select class="country_list" multiple="multiple">
+					{{#each obj in countryList}}
+						<option {{bind-attr value="obj.text"}} selected="selected">{{obj.text}}</option>
+					{{/each}}
+				</select>
+			</div>
+			<div class="filter_column position_container">
+			<div class="position_text">Position</div>
+				<select class="position_list" multiple="multiple">
+					{{#each obj in positionList}}
+						<option {{bind-attr value="obj.text"}} selected="selected">{{obj.text}}</option>
+					{{/each}}
+				</select>
+			</div>
+			<div class="filter_column slider_container">
+				<div class="slider_text">Age</div>
+				<div class="slider_min">{{lowValue}}</div>
+				<div class="age_slider"></div>
+				<div class="slider_max">{{highValue}}</div>
+			</div>
+		</div>
+		<div class="result_content box">
+			<div class="result_header column">Show Results</div>
+			<div class="result_container column">
+				Showing {{startIndex}} - {{endIndex}} out of {{selectedDataLength}} Search Results
+			</div>
+			<div class="page_container">{{createPages noOfPages selectedPage}}</div>
+		</div>
+	</div>
+	<div class="content">
+		{{#each player in selectedPageData}}
+			{{view Club.InfoView player=player}}
+		{{/each}}
+	</div>
+</div>

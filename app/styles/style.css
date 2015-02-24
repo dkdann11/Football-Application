@@ -1,0 +1,283 @@
+html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    font-family: Verdana;
+    font-size:14px;
+    background-color: #E9EAED; /*#F6F6F6; /*#F6F6F5;*/
+    overflow-y:hidden;
+}
+.container {
+	height:100%;
+	width: 100%;
+}
+.row {
+	float: left;
+	width: 100%;
+}
+.column {
+	float: left;
+}
+.column_10 {
+	width: 10%;
+}
+.column_20 {
+	width: 20%;
+}
+.column_30 {
+	width: 30%;
+}
+.column_40 {
+	width: 40%;
+}
+.column_50 {
+	width: 50%;
+}
+.column_60 {
+	width: 60%;
+}
+.column_70 {
+	width: 70%;
+}
+.column_80 {
+	width: 80%;
+}
+.column_90 {
+	width: 90%;
+}
+.column_100 {
+	width: 100%;
+}
+button:focus, a:focus {
+	outline:0 !important;
+}
+.menu_header {
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	font-size: 18px;
+	background-color: #122426;
+	color: white;
+	border: 1px solid #c3c3c3 !important;
+	box-sizing: border-box;
+}
+.header_name {
+	float: left;
+	text-align: left;
+	margin-left: 10px;
+	background: url(../images/madrid.png) no-repeat;
+	background-position: 135px;
+	width:180px;
+}
+.header_content {
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+	font-size: 16px;
+}
+.box {
+	float: left;
+	margin: 10px 0 0 5%;
+	width: 90%;
+	border: 1px solid #c3c3c3 !important;
+	background-color: #fff;
+}
+.content, .top_content {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.content {
+	margin-top:10px;
+	padding-bottom: 10px;
+	height: calc( 100% - 160px);
+	overflow-y: auto;
+}
+.filter_column {
+	float:left;
+}
+.filter_panel, .result_content {
+	height:40px;
+}
+.country_text, .position_text {
+	line-height: 40px;
+	float:left;
+	width:75px;
+	padding-left: 5px;
+}
+.country_list, .position_list {
+	float:left;
+}
+.image_container {
+	padding:10px;
+	height: 105px;
+	width: 105px;
+	box-sizing: border-box;
+}
+.player_name, .form_text {
+	height: 30px;
+	line-height: 30px;
+	color: #122426;
+	font-size: 18px;
+}
+.form_text {
+	color: black;
+	font-size: 14px;
+}
+.form_value {
+	height:20px;
+}
+.player_bio {
+	padding-left: 5px;
+	width: 350px;
+	font-size: 13px;
+}
+.player_form {
+	padding-left: 5px;
+	width: 190px;
+	float: right;
+}
+.form_box {
+	float:left;
+	height: 14px;
+	width:14px;
+	margin-right: 3px;
+	background-color: #c3c3c3;
+}
+.filled_box {
+	background-color: #2C5257;
+}
+.player_info {
+	float: left;
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+}
+.plyer_desc {
+	float:left;
+	width:100px;
+}
+.slider_container {
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.slider_text {
+	float:left;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+}
+.slider_min, .slider_max {
+	float:left;
+	height: 40px;
+	width: 30px;
+	line-height: 40px;
+	float: left;
+}
+.slider_max {
+	text-align: right;
+}
+.age_slider {
+	float: left;
+	width: 130px;
+	height: 6px;
+	margin-top: 16px;
+}
+.ui-slider-handle {
+	height:12px !important;
+	width:12px !important;
+	border-radius: 6px !important;
+	top: -4px !important;
+	background: #c3c3c3 !important;
+}
+.ui-state-focus {
+	background: #c3c3c3 !important;
+}
+.page_container {
+	height:40px;
+	float:right;
+	box-sizing: border-box;
+	border-right: none;
+}
+.result_header {
+	padding-left:5px;
+	line-height: 40px;
+	width:110px;
+	font-weight: bold;
+	border-right: 1px solid #c3c3c3;
+}
+.page_box {
+	float:left;
+	height:100%;
+	width:40px;
+	border-right: 1px solid #c3c3c3;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.prev_page, .next_page {
+	background-image: url(../images/next.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 50%;
+}
+.prev_page {
+	border-left: 1px solid #c3c3c3;
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.next_page {
+	border-right: none;
+}
+.result_container {
+	padding-left:20px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+.selected_box {
+	background-color: #E9EAED;
+}
+@media (max-width: 900px) {
+	.filter_column {
+		width:100%;
+	}
+	.filter_panel {
+		clear:both;
+		width: 250px;
+		height:120px;
+	}
+	.age_slider {
+		width: 130px;
+	}
+	.result_content {
+		height: 80px;
+	}
+	.result_header {
+		height:80px;
+		line-height: 80px;
+	}
+	.page_container {
+		border-top: 1px solid #c3c3c3 !important;
+	}
+	.result_container {
+		width:calc( 100% - 120px);
+		border-: 1px solid #c3c3c3 !important;
+		text-align: right;
+	}
+	.content {
+		height: calc( 100% - 280px);
+		overflow-y: auto; 
+	}
+	.country_container, .position_container {
+		border-bottom: 1px solid #c3c3c3 !important;
+	}
+	.ms-parent {
+		border-right: none !important;
+	}
+}
+@media (max-width: 750px) {
+	.player_form {
+		float: left;
+	}
+}

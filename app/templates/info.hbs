@@ -1,0 +1,26 @@
+<div class="row">
+	<img class="column image_container" {{bind-attr src=player.imageLink}}>
+	<div class="column player_bio">
+		<div class="player_name">{{player.name}}</div>
+		<div class="player_info">
+			<div class="plyer_desc">Age</div>
+			<div class="player_age">{{player.age}}</div>
+		</div>
+		<div class="player_info">
+			<div class="plyer_desc">Nationality</div>
+			<div class="player_country">{{player.nationality}}</div>
+		</div>
+		<div class="player_info">
+			<div class="plyer_desc">Position</div>
+			<div class="player_position">{{player.actualPosition}}</div>
+		</div>
+		<div class="player_info">
+			<div class="plyer_desc">Past Club</div>
+			<div class="player_past">{{player.pastClub}}</div>
+		</div>
+	</div>
+	<div class="column player_form">
+		<div class="form_text">Recent Form</div>
+		<div class="form_value">{{playerForm player}}</div>
+	</div>
+</div>

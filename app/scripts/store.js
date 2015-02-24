@@ -1,0 +1,1 @@
+Club.ApplicationAdapter = DS.FixtureAdapter;
